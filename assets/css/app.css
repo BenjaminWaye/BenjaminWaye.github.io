@@ -1,5 +1,6 @@
 .app-ad-container {
   position: relative;
+  cursor: pointer;
 }
 
 .app-ad-container a {
@@ -7,4 +8,37 @@
   top: 0px;
   right: 100px;
   z-index: 1;
+}
+
+.modal {
+  overflow: initial !important;
+}
+
+.blocker {
+  z-index: 3 !important;
+}
+
+#ex1 h2 {
+  margin-top: 20px;
+}
+
+#ex1 p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#ex1 input {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 10px;
+  /* border-radius: 5px;
+  border: 1px solid #ccc; */
+}
+
+#ex1 .button {
+  border: 1px solid #181b31;
+  cursor: pointer;
+  margin-bottom: 20px;
 }

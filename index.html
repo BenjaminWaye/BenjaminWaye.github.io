@@ -59,10 +59,32 @@
 	  src="https://www.facebook.com/tr?id=2344625309100215&ev=PageView&noscript=1"
 	/></noscript>
 	<!-- End Facebook Pixel Code -->
+  <!-- Remember to include jQuery :) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <script>
+  function openTryApp() {
+    $('#ex1').modal({ escapeClose: false, clickClose: false, showClose: true });
+  }
+  </script>
 </head>
 <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="minimal" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
-
+  <div id="ex1" class="modal">
+    <h2>Thanks for your support!</h2>
+    <p>Our app is currently in Beta.</p>
+    <p>To be one of the first to try it sign-up with your email below.</p>
+    <p>
+      <input placeholder="Type your e-mail here" />
+    </p>
+    <a class="button btn btn-solid btn-sm semi-round px-3 btn-block bg-dark border-color-dark bg-hover-white text-white text-hover-dark lh-2">
+      <span>
+        <span class="btn-txt">Submit</span>
+      </span>
+    </a>
+  </div>
 	<div id="wrap">
 
 		<header class="main-header main-header-overlay bb-fade-white-015" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
@@ -144,16 +166,6 @@
 												</span>
 											</a>
 										</li>
-                    <li>
-											<a href="#app">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Download App</span>
-												</span>
-											</a>
-										</li>
-
 								</ul><!-- /#primary-nav  -->
 
 							</div><!-- /#main-header-collapse -->
@@ -227,8 +239,8 @@
 						</div><!-- /.row -->
 
 					</div><!-- /.col-md-8 -->
-          <div class="app-ad-container">
-            <a href="https://benjaminwaye.typeform.com/to/jWV8qz" data-mode="popup" target="_blank" class="typeform-share button btn btn-naked btn-icon-block btn-icon-top btn-icon-xxlg btn-icon-circle btn-icon-solid btn-icon-ripple">
+          <div class="app-ad-container" onclick="openTryApp()">
+            <a href="#ex1" rel="modal:open" data-mode="popup" target="_blank" class="button btn btn-naked btn-icon-block btn-icon-top btn-icon-xxlg btn-icon-circle btn-icon-solid btn-icon-ripple">
               <span>
                 <span class="btn-icon font-size-6">Try App</span>
               </span>
@@ -779,7 +791,6 @@
 		</section>
 
 	</footer><!-- /.main-footer -->
-
 </div><!-- /#wrap -->
 
 <script src="./assets/vendors/jquery.min.js"></script>
@@ -788,7 +799,6 @@
 <script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
 <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
 </script>
-
 </body>
 <link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
 <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
