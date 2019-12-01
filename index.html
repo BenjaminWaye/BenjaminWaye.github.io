@@ -71,14 +71,11 @@
   }
 
   function saveEmail() {
-    debugger;
     $("#signup-email").hide();
     $("#email-save-btn").hide();
     $("#email-save-success").show();
     var email = document.getElementById('signup-email');
-    $.post( "http://rabbit.pt/tidanapp/beta-signup.php", { email: email.value }, function(data) {
-      // $( ".result" ).html( data );
-    });
+    $.post( "http://rabbit.pt/tidanapp/beta-signup.php", { email: email.value });
   }
   </script>
 </head>
