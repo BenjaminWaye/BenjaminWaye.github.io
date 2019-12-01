@@ -1,0 +1,10 @@
+.app-ad-container {
+  position: relative;
+}
+
+.app-ad-container a {
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  z-index: 1;
+}
