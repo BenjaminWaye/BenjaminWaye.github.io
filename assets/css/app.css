@@ -42,3 +42,10 @@
   cursor: pointer;
   margin-bottom: 20px;
 }
+
+#ex1 #email-save-success {
+  color: green;
+  display: none;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}

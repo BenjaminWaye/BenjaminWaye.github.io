@@ -69,6 +69,17 @@
   function openTryApp() {
     $('#ex1').modal({ escapeClose: false, clickClose: false, showClose: true });
   }
+
+  function saveEmail() {
+    debugger;
+    $("#signup-email").hide();
+    $("#email-save-btn").hide();
+    $("#email-save-success").show();
+    var email = document.getElementById('signup-email');
+    $.post( "http://rabbit.pt/tidanapp/beta-signup.php", { email: email.value }, function(data) {
+      // $( ".result" ).html( data );
+    });
+  }
   </script>
 </head>
 <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="minimal" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
@@ -77,13 +88,14 @@
     <p>Our app is currently in Beta.</p>
     <p>To be one of the first to try it sign-up with your email below.</p>
     <p>
-      <input placeholder="Type your e-mail here" />
+      <input placeholder="Type your e-mail here" id="signup-email" />
     </p>
-    <a class="button btn btn-solid btn-sm semi-round px-3 btn-block bg-dark border-color-dark bg-hover-white text-white text-hover-dark lh-2">
+    <a id="email-save-btn" onclick="saveEmail()" class="button btn btn-solid btn-sm semi-round px-3 btn-block bg-dark border-color-dark bg-hover-white text-white text-hover-dark lh-2">
       <span>
-        <span class="btn-txt">Submit</span>
+        <span class="btn-txt">Sign-up</span>
       </span>
     </a>
+    <p id="email-save-success">E-mail saved. We will notify you as soon as our app is ready for download.</p>
   </div>
 	<div id="wrap">
 
