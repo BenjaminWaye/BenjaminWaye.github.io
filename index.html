@@ -69,30 +69,27 @@
   function openTryApp() {
     $('#ex1').modal({ escapeClose: false, clickClose: false, showClose: true });
   }
-
-  function saveEmail() {
-    $("#signup-email").hide();
-    $("#email-save-btn").hide();
-    $("#email-save-success").show();
-    var email = document.getElementById('signup-email');
-    $.post( "http://rabbit.pt/tidanapp/beta-signup.php", { email: email.value });
-  }
   </script>
 </head>
 <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="minimal" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
-  <div id="ex1" class="modal">
+  <div id="ex1" class="modal ld-sf ld-sf--input-solid ld-sf--button-solid ld-sf--size-md ld-sf--circle ld-sf--border-thin ld-sf--button-show ld-sf--button-inline">
     <h2>Thanks for your support!</h2>
     <p>Our app is currently in Beta.</p>
     <p>To be one of the first to try it sign-up with your email below.</p>
-    <p>
-      <input placeholder="Type your e-mail here" id="signup-email" />
-    </p>
-    <a id="email-save-btn" onclick="saveEmail()" class="button btn btn-solid btn-sm semi-round px-3 btn-block bg-dark border-color-dark bg-hover-white text-white text-hover-dark lh-2">
-      <span>
-        <span class="btn-txt">Sign-up</span>
-      </span>
-    </a>
-    <p id="email-save-success">E-mail saved. We will notify you as soon as our app is ready for download.</p>
+    <form id="ld_subscribe_form" class="ld_sf_form" style="align-items:center;" action="https://tidanapp.us5.list-manage.com/subscribe/post?u=9e913027b684de7c97006d16a&amp;id=0a9735e5f8" name="mc-embedded-subscribe-form" method="post">
+      <p class="ld_sf_paragraph pr-2">
+        <input type="email" style="border: 1px solid grey;" class="ld_sf_text" id="mce-EMAIL" name="EMAIL" placeholder="Your email" value="">
+      </p>
+      <button type="submit" class="ld_sf_submit">
+        <span class="submit-icon">
+          Sign-up
+        </span>
+        <span class="ld-sf-spinner">
+          <span>Sending </span>
+        </span>
+      </button>
+    </form>
+    <div class="ld_sf_response"></div>
   </div>
 	<div id="wrap">
 
@@ -290,7 +287,7 @@
 							<span class="cb-overlay"></span>
 							<div class="fancy-box-contents border-radius-3">
 								<div class="fancy-box-header">
-									<span class="cb-subtitle text-uppercase ltr-sp-2 border-radius-3">Customize</span>
+									<a href="https://benjaminwaye.typeform.com/to/jWV8qz" data-mode="popup" target="_blank" class="typeform-share cb-subtitle text-uppercase ltr-sp-2 border-radius-3" style="color:white;">Customize</a>
 									<h3 class="font-weight-semibold">17 000 SEK</h3>
 									<p class="font-size-16 opacity-06">18K yellow Gold wedding ring set. With 2 carat Oval perfectly white moissanites and baguette halo.</p>
 								</div><!-- /.fancy-box-header -->
@@ -310,7 +307,7 @@
 							<span class="cb-overlay"></span>
 							<div class="fancy-box-contents border-radius-3">
 								<div class="fancy-box-header">
-									<span class="cb-subtitle text-uppercase ltr-sp-2 border-radius-3">Customize</span>
+									<a href="https://benjaminwaye.typeform.com/to/jWV8qz" data-mode="popup" target="_blank" class="typeform-share cb-subtitle text-uppercase ltr-sp-2 border-radius-3" style="color:white;">Customize</a>
 									<h3 class="font-weight-semibold">6500 SEK</h3>
 									<p class="font-size-16 opacity-06">Sterling Silver .925 signet ring. With blue layered Agat hand engraved family crest.</p>
 								</div><!-- /.fancy-box-header -->
@@ -330,7 +327,7 @@
 							<span class="cb-overlay"></span>
 							<div class="fancy-box-contents border-radius-3">
 								<div class="fancy-box-header">
-									<span class="cb-subtitle text-uppercase ltr-sp-2 border-radius-3">Customize</span>
+                  <a href="https://benjaminwaye.typeform.com/to/jWV8qz" data-mode="popup" target="_blank" class="typeform-share cb-subtitle text-uppercase ltr-sp-2 border-radius-3" style="color:white;">Customize</a>
 									<h3 class="font-weight-semibold">18 000 SEK</h3>
 									<p class="font-size-16 opacity-06">18K rose Gold engagement ring. Set with 0.5ct lab grown diamond surrounded by a channel setting.</p>
 								</div><!-- /.fancy-box-header -->
