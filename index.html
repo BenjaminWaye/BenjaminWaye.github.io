@@ -503,7 +503,7 @@
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 9000
+                      <span class="ld-sp-currency">SEK</span> 11 500
                     </span>
                   </p>
                 </div>
@@ -789,14 +789,19 @@
                 <div class="ld-sp pos-rel">
                   <figure class="ld-sp-img border-radius-3">
                     <img
+                      id="cufflinks"
                       src="./assets/img/ourwork/silver_cufflinks_coat_of_arms.jpg"
-                      alt="Product"
+                      alt="Cufflinks"
+                      onmouseover="hover('cufflinks')"
+                      onmouseout="unhover('cufflinks')"
                     />
                   </figure>
                   <a
                     target="_blank"
                     data-seller="5dee44cf1960a900153d7600"
                     data-checkout="silver-cufflinks-with-coat-of-arms"
+                    onmouseover="hover('cufflinks')"
+                    onmouseout="unhover('cufflinks')"
                     class="add_to_cart_button cp-button"
                     style="cursor: pointer"
                   >
@@ -1670,6 +1675,34 @@
       function showMore() {
         document.getElementById("hiddenRow").classList.remove("hidden");
         document.getElementById("showMoreButton").classList.add("hidden");
+      }
+      function hover(id) {
+        var el = document.getElementById(id);
+        switch (id) {
+          case "cufflinks":
+            {
+              el.setAttribute(
+                "src",
+                "./assets/img/ourwork/silver_cufflinks_coat_of_arms_on_cuff.jpg"
+              );
+            }
+            break;
+          default:
+        }
+      }
+      function unhover(id) {
+        var el = document.getElementById(id);
+        switch (id) {
+          case "cufflinks":
+            {
+              el.setAttribute(
+                "src",
+                "./assets/img/ourwork/silver_cufflinks_coat_of_arms.jpg"
+              );
+            }
+            break;
+          default:
+        }
       }
     </script>
   </body>
