@@ -88,7 +88,7 @@
 
 .btn-icon-solid .btn-icon {
   background-color: #fff;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .btn-icon-circle.btn-icon-ripple .btn-icon:before {
