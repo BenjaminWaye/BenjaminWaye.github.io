@@ -69,3 +69,28 @@
   color: #191919;
   margin: 0;
 }
+
+@media (max-width: 996px) {
+  .d-none.d-lg-block {
+    display: none;
+  }
+}
+.hero.bg-cover {
+  background-image: url(../img/hero/_MG_7109_copy_mobile.png);
+  height: 90vh;
+}
+
+@media (min-width: 996px) {
+  .hero.bg-cover {
+    background-image: url(../img/hero/_MG_7109_copy_test2.png);
+  }
+}
+
+.btn-icon-solid .btn-icon {
+  background-color: #fff;
+  color: var(--color-secondary);
+}
+
+.btn-icon-circle.btn-icon-ripple .btn-icon:before {
+  border: 1px solid #fff;
+}
