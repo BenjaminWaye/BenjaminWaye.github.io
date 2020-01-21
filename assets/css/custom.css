@@ -76,13 +76,13 @@
   }
 }
 .hero.bg-cover {
-  background-image: url(../img/hero/_MG_7109_copy_mobile.png);
+  background-image: url(../img/hero/tidan_hero_mobile.jpg);
   height: 90vh;
 }
 
 @media (min-width: 996px) {
   .hero.bg-cover {
-    background-image: url(../img/hero/_MG_7109_copy_test2.png);
+    background-image: url(../img/hero/tidan_hero.jpg);
   }
 }
 
