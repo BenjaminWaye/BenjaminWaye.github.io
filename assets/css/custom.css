@@ -94,3 +94,18 @@
 .btn-icon-circle.btn-icon-ripple .btn-icon.invert:before {
   border: 1px solid #fff;
 }
+
+#showMoreButton.btn {
+  background-color: #fff;
+}
+
+#showMoreButton.btn:hover {
+  background-color: var(--color-primary);
+}
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    width: 50%;
+    float: left;
+  }
+}
