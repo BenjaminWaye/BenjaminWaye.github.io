@@ -139,7 +139,7 @@
     <!-- Head Libs -->
     <script async src="assets/vendors/modernizr.min.js"></script>
     <!-- Facebook Pixel Code -->
-    <script>
+    <script async>
       !(function(f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function() {
@@ -175,10 +175,16 @@
     /></noscript>
     <!-- End Facebook Pixel Code -->
     <!-- Remember to include jQuery :) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+    ></script>
 
     <!-- jQuery Modal -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
@@ -409,7 +415,7 @@
               >
                 <h5 class="text-white font-size-12 text-uppercase ltr-sp-2">
                   Custom rings <br />
-                  made easy
+                  made for you
                 </h5>
 
                 <div
@@ -1227,9 +1233,9 @@
                   <div
                     class="liquid-counter-element align-items-start text-primary"
                     data-enable-counter="true"
-                    data-counter-options='{"targetNumber":"130", "blurEffect":true}'
+                    data-counter-options='{"targetNumber":"132", "blurEffect":true}'
                   >
-                    <span>130</span>
+                    <span>132</span>
                   </div>
                   <!-- /.liquid-counter-element -->
                   <p class="font-size-16">custom pieces shipped globally</p>
@@ -1728,10 +1734,9 @@
       src="https://checkoutpage.co/js/overlay.js"
       defer
     ></script>
-    <script src="./assets/vendors/jquery.min.js"></script>
-    <script src="./assets/js/theme-vendors.js"></script>
-    <script src="./assets/js/theme.min.js"></script>
-    <script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
+    <script defer src="./assets/js/theme-vendors.js"></script>
+    <script defer src="./assets/js/theme.min.js"></script>
+    <script defer src="./assets/js/liquidAjaxMailchimp.min.js"></script>
     <script>
       (function() {
         var qs,
