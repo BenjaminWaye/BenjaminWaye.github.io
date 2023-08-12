@@ -96,11 +96,13 @@
 }
 
 #showMoreButton.btn {
-  background-color: #fff;
+  color: #fff;
+  background-color: var(--color-primary);
 }
 
 #showMoreButton.btn:hover {
-  background-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: #fff;
 }
 
 @media (max-width: 992px) and (min-width: 500px) {
@@ -108,4 +110,23 @@
     width: 50%;
     float: left;
   }
+}
+
+.main-nav .link-txt .txt {
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1199px) {
+  [data-mobile-header-scheme="white"] .main-header .navbar-header {
+    background: #ffffff;
+    border-bottom: solid lightgray 1px;
+  }
+}
+
+h3 > a {
+  color: inherit;
+}
+
+h3 > a:hover {
+  opacity: 0.5;
 }

@@ -8,6 +8,7 @@
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
+
       function gtag() {
         dataLayer.push(arguments);
       }
@@ -129,20 +130,45 @@
       content="TIDAN: Making your perfect wedding ring at an honest price!"
     />
 
-    <link rel="stylesheet" href="https://use.typekit.net/vtq7trz.css" />
-    <link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/vtq7trz.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/theme-vendors.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
     <link rel="stylesheet" href="assets/css/theme.min.css" />
-    <link rel="stylesheet" href="assets/css/themes/voguish.css" />
-    <link rel="stylesheet" href="assets/css/app.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/themes/voguish.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/app.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/custom.css"
+      media="print"
+      onload="this.media='all'"
+    />
 
     <!-- Head Libs -->
     <script async src="assets/vendors/modernizr.min.js"></script>
     <!-- Facebook Pixel Code -->
     <script async>
-      !(function(f, b, e, v, n, t, s) {
+      !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
-        n = f.fbq = function() {
+        n = f.fbq = function () {
           n.callMethod
             ? n.callMethod.apply(n, arguments)
             : n.queue.push(arguments);
@@ -170,7 +196,7 @@
       ><img
         height="1"
         width="1"
-        style="display:none"
+        style="display: none"
         src="https://www.facebook.com/tr?id=2344625309100215&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
@@ -179,71 +205,16 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"
     ></script>
-
-    <!-- jQuery Modal -->
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
-    />
-    <script>
-      function openTryApp() {
-        $("#ex1").modal({
-          escapeClose: false,
-          clickClose: false,
-          showClose: true
-        });
-      }
-    </script>
   </head>
+
   <body
     data-mobile-nav-trigger-alignment="right"
     data-mobile-nav-align="left"
     data-mobile-nav-style="minimal"
-    data-mobile-nav-shceme="gray"
-    data-mobile-header-scheme="gray"
+    data-mobile-nav-shceme="white"
+    data-mobile-header-scheme="white"
     data-mobile-nav-breakpoint="1199"
   >
-    <div
-      id="ex1"
-      class="modal ld-sf ld-sf--input-solid ld-sf--button-solid ld-sf--size-md ld-sf--circle ld-sf--border-thin ld-sf--button-show ld-sf--button-inline"
-    >
-      <h2>Thanks for your support!</h2>
-      <p>Our app is currently in Beta.</p>
-      <p>To be one of the first to try it sign-up with your email below.</p>
-      <form
-        id="ld_subscribe_form"
-        class="ld_sf_form"
-        style="align-items:center;"
-        action="https://tidanapp.us5.list-manage.com/subscribe/post?u=9e913027b684de7c97006d16a&amp;id=0a9735e5f8"
-        name="mc-embedded-subscribe-form"
-        method="post"
-      >
-        <p class="ld_sf_paragraph pr-2">
-          <input
-            type="email"
-            style="border: 1px solid grey;"
-            class="ld_sf_text"
-            id="mce-EMAIL"
-            name="EMAIL"
-            placeholder="Your email"
-            value=""
-          />
-        </p>
-        <button type="submit" class="ld_sf_submit">
-          <span class="submit-icon">
-            Sign-up
-          </span>
-          <span class="ld-sf-spinner">
-            <span>Sending </span>
-          </span>
-        </button>
-      </form>
-      <div class="ld_sf_response"></div>
-    </div>
     <div id="wrap">
       <header
         class="main-header main-header-overlay bb-fade-white-015"
@@ -425,11 +396,9 @@
                 >
                   <div class="lqd-column col-md-2 mb-5 mb-md-0">
                     <a
-                      href="https://benjaminwaye.typeform.com/to/jWV8qz"
-                      data-mode="popup"
-                      target="_blank"
-                      class="typeform-share button btn btn-naked btn-icon-block btn-icon-top btn-icon-xxlg btn-icon-circle btn-icon-solid btn-icon-ripple"
-                      onClick="ga(‘send’, ‘event’, ‘cta’, ‘click’, ‘hero-button’);"
+                      href="https://app.tidanapp.com"
+                      class="button btn btn-naked btn-icon-block btn-icon-top btn-icon-xxlg btn-icon-circle btn-icon-solid btn-icon-ripple"
+                      onClick="gtag('event', 'click', { 'event_category':'Click', 'event_label':'hero-button' })"
                     >
                       <span>
                         <span class="btn-icon invert font-size-6"
@@ -486,9 +455,7 @@
               <div
                 class="lqd-column col-md-10 col-md-offset-1 text-center mb-4"
               >
-                <h2>
-                  Our collection
-                </h2>
+                <h2>Our collection</h2>
               </div>
               <!-- /.lqd-column col-md-10 col-md-offset-1 -->
             </div>
@@ -509,20 +476,17 @@
                     />
                   </figure>
                   <a
-                    target="_blank"
-                    data-seller="5dee44cf1960a900153d7600"
-                    data-checkout="wedding-ring-set-with-baguettes-and-halo-setting"
+                    href="https://checkoutpage.co/c/5dee44cf1960a900153d7600/wedding-ring-set-with-baguettes-and-halo-setting"
                     class="add_to_cart_button cp-button"
                     onmouseover="hover('animate-halo-ring')"
                     onmouseout="unhover('animate-halo-ring')"
                     style="cursor: pointer"
-                    onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘wedding-ring-set-with-baguettes-and-halo-setting’, ‘11500’);"
+                    onClick="gtag('event', 'click', { 'event_category':'Click', 'event_label':'wedding-ring-set-with-baguettes-and-halo-setting', 'value': '11500' })"
                   >
                     <span
                       target="_blank"
                       data-seller="5dee44cf1960a900153d7600"
                       data-checkout="wedding-ring-set-with-baguettes-and-halo-setting"
-                      class="cp-button"
                       >Customize</span
                     >
                   </a>
@@ -534,15 +498,14 @@
                       target="_blank"
                       data-seller="5dee44cf1960a900153d7600"
                       data-checkout="wedding-ring-set-with-baguettes-and-halo-setting"
-                      class="cp-button"
                       style="cursor: pointer"
-                      onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘wedding-ring-set-with-baguettes-and-halo-setting’, ‘11500’);"
+                      onClick="gtag('event', 'click', { 'event_category':'Click', 'event_label':'wedding-ring-set-with-baguettes-and-halo-setting', value: '11500' })"
                       >Yellow Gold halo setting Moissanite engagement ring
                     </a>
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 11 500
+                      <span class="ld-sp-currency">$</span>1199
                     </span>
                   </p>
                 </div>
@@ -555,22 +518,20 @@
                   <figure class="ld-sp-img border-radius-3">
                     <img
                       id="animate-signet-ring-agate"
-                      data-src="./assets/img/ourwork/silver_signet_ring_round_blue_layered_agat_hand_engarved.jpg"
+                      data-src="./assets/img/ourwork/silver_signet_ring_round_blue_layered_agate_hand_engraved.jpg"
                       onmouseover="hover('animate-signet-ring-agate')"
                       onmouseout="unhover('animate-signet-ring-agate')"
                       class="lazyload"
-                      alt="Silver signet ring round blue layered agat hand engarved"
+                      alt="Silver signet ring round blue layered agate hand engarved"
                     />
                   </figure>
                   <a
-                    target="_blank"
-                    data-seller="5dee44cf1960a900153d7600"
-                    data-checkout="signet-ring-with-round-layered-blue-agate"
+                    href="https://checkoutpage.co/c/5dee44cf1960a900153d7600/signet-ring-with-round-layered-blue-agate"
                     class="add_to_cart_button cp-button"
                     onmouseover="hover('animate-signet-ring-agate')"
                     onmouseout="unhover('animate-signet-ring-agate')"
                     style="cursor: pointer"
-                    onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘signet-ring-with-round-layered-blue-agate’, ‘6500’);"
+                    onClick="gtag('event', 'click', { 'event_category':'Click', 'event_label':'signet-ring-with-round-layered-blue-agate', 'value': '6500' })"
                   >
                     <span
                       target="_blank"
@@ -588,15 +549,14 @@
                       target="_blank"
                       data-seller="5dee44cf1960a900153d7600"
                       data-checkout="signet-ring-with-round-layered-blue-agate"
-                      class="cp-button"
                       style="cursor: pointer"
-                      onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘signet-ring-with-round-layered-blue-agate’, ‘6500’);"
+                      onClick="gtag('event', 'click', { 'event_category':'Click', 'event_label':'signet-ring-with-round-layered-blue-agate', 'value': '6500' })"
                       >Signet ring with blue layered agate
                     </a>
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 6500
+                      <span class="ld-sp-currency">$</span> 899
                     </span>
                   </p>
                 </div>
@@ -617,14 +577,12 @@
                     />
                   </figure>
                   <a
-                    target="_blank"
-                    data-seller="5dee44cf1960a900153d7600"
-                    data-checkout="solitaire-lab-diamond-ring-with-channel-setting"
+                    href="https://checkoutpage.co/c/5dee44cf1960a900153d7600/solitaire-lab-diamond-ring-with-channel-setting"
                     class="add_to_cart_button cp-button"
                     onmouseover="hover('animate-rose-diamond-ring')"
                     onmouseout="unhover('animate-rose-diamond-ring')"
                     style="cursor: pointer"
-                    onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘solitaire-lab-diamond-ring-with-channel-setting’, ‘18000’);"
+                    onClick="gtag('event', 'click', { 'event_category':'Click', 'event_label':'solitaire-lab-diamond-ring-with-channel-setting', 'value': '18000' })"
                   >
                     <span
                       target="_blank"
@@ -642,15 +600,14 @@
                       target="_blank"
                       data-seller="5dee44cf1960a900153d7600"
                       data-checkout="solitaire-lab-diamond-ring-with-channel-setting"
-                      class="cp-button"
                       style="cursor: pointer"
-                      onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘solitaire-lab-diamond-ring-with-channel-setting’, ‘18000’);"
-                      >Rose Gold Diamond Engagement ring
+                      onClick="gtag('event', 'click', { 'event_category':'Click', 'event_label':'solitaire-lab-diamond-ring-with-channel-setting', 'value': '18000' })"
+                      >Rose Gold Lab Diamond Engagement ring
                     </a>
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 18 000
+                      <span class="ld-sp-currency">$</span> 1499
                     </span>
                   </p>
                 </div>
@@ -670,12 +627,10 @@
                     />
                   </figure>
                   <a
-                    target="_blank"
-                    data-seller="5dee44cf1960a900153d7600"
-                    data-checkout="18k-gold-pendant-with-your-3d-scan"
+                    href="https://checkoutpage.co/c/5dee44cf1960a900153d7600/18k-gold-pendant-with-your-3d-scan"
                     class="add_to_cart_button cp-button"
                     style="cursor: pointer"
-                    onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘18k-gold-pendant-with-your-3d-scan’, ‘4900’);"
+                    onClick="gtag('event', 'click', { 'event_category':'product-list', 'event_label':'18k-gold-pendant-with-your-3d-scan', 'value': '4900', 'currency': 'SEK' })"
                   >
                     <span
                       target="_blank"
@@ -693,15 +648,14 @@
                       target="_blank"
                       data-seller="5dee44cf1960a900153d7600"
                       data-checkout="18k-gold-pendant-with-your-3d-scan"
-                      class="cp-button"
                       style="cursor: pointer"
-                      onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘18k-gold-pendant-with-your-3d-scan’, ‘4900’);"
+                      onClick="gtag('event', 'click', { 'event_category':'product-list', 'event_label':'18k-gold-pendant-with-your-3d-scan', 'value': '4900', 'currency': 'SEK' })"
                       >3D scanned yellow Gold hand pendant
                     </a>
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 4900
+                      <span class="ld-sp-currency">$</span> 599
                     </span>
                   </p>
                 </div>
@@ -719,12 +673,10 @@
                     />
                   </figure>
                   <a
-                    target="_blank"
-                    data-seller="5dee44cf1960a900153d7600"
-                    data-checkout="octagonal-signet-ring-with-carnelian"
+                    href="https://checkoutpage.co/c/5dee44cf1960a900153d7600/octagonal-signet-ring-with-carnelian"
                     class="add_to_cart_button cp-button"
                     style="cursor: pointer"
-                    onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘octagonal-signet-ring-with-carnelian’, ‘6500’);"
+                    onClick="gtag('event', 'click', { 'event_category':'product-list', 'event_label':'octagonal-signet-ring-with-carnelian', 'value': '6500', 'currency': 'SEK' })"
                   >
                     <span
                       target="_blank"
@@ -742,15 +694,14 @@
                       target="_blank"
                       data-seller="5dee44cf1960a900153d7600"
                       data-checkout="octagonal-signet-ring-with-carnelian"
-                      class="cp-button"
                       style="cursor: pointer"
-                      onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘octagonal-signet-ring-with-carnelian’, ‘6500’);"
-                      >Signet ring with red Carnelian
+                      onClick="gtag('event', 'click', { 'event_category':'product-list', 'event_label':'octagonal-signet-ring-with-carnelian', 'value': '6500', 'currency': 'SEK' })"
+                      >Silver signet ring with red Carnelian
                     </a>
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 6500
+                      <span class="ld-sp-currency">$</span> 899
                     </span>
                   </p>
                 </div>
@@ -767,12 +718,10 @@
                     />
                   </figure>
                   <a
-                    target="_blank"
-                    data-seller="5dee44cf1960a900153d7600"
-                    data-checkout="18k-white-gold-lab-diamond-solitaire"
+                    href="https://checkoutpage.co/c/5dee44cf1960a900153d7600/18k-white-gold-lab-diamond-solitaire"
                     class="add_to_cart_button cp-button"
                     style="cursor: pointer"
-                    onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘18k-white-gold-lab-diamond-solitaire’, ‘11250’);"
+                    onClick="gtag('event', 'click', { 'event_category':'product-list', 'event_label':'18k-white-gold-lab-diamond-solitaire', 'value': '11250', 'currency': 'SEK' })"
                   >
                     <span
                       target="_blank"
@@ -787,18 +736,14 @@
                 <div class="ld-sp-info">
                   <h3>
                     <a
-                      target="_blank"
-                      data-seller="5dee44cf1960a900153d7600"
-                      data-checkout="18k-white-gold-lab-diamond-solitaire"
-                      class="cp-button"
                       style="cursor: pointer"
-                      onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘18k-white-gold-lab-diamond-solitaire’, ‘11250’);"
+                      onClick="gtag('event', 'click', { 'event_category':'product-list', 'event_label':'18k-white-gold-lab-diamond-solitaire', 'value': '11250', 'currency': 'SEK' })"
                       >White Gold Diamond solitaire
                     </a>
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 11 250
+                      <span class="ld-sp-currency">$</span> 1299
                     </span>
                   </p>
                 </div>
@@ -815,9 +760,7 @@
                     />
                   </figure>
                   <a
-                    target="_blank"
-                    data-seller="5dee44cf1960a900153d7600"
-                    data-checkout="turk-head-silver-ring"
+                    href="https://checkoutpage.co/c/5dee44cf1960a900153d7600/turk-head-silver-ring"
                     class="add_to_cart_button cp-button"
                     style="cursor: pointer"
                     onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘turk-head-silver-ring’, ‘2800’);"
@@ -835,10 +778,6 @@
                 <div class="ld-sp-info">
                   <h3>
                     <a
-                      target="_blank"
-                      data-seller="5dee44cf1960a900153d7600"
-                      data-checkout="turk-head-silver-ring"
-                      class="cp-button"
                       style="cursor: pointer"
                       onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘turk-head-silver-ring’, ‘2800’);"
                       >Turk head silver ring
@@ -846,7 +785,7 @@
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 2800
+                      <span class="ld-sp-currency">$</span> 299
                     </span>
                   </p>
                 </div>
@@ -866,9 +805,7 @@
                     />
                   </figure>
                   <a
-                    target="_blank"
-                    data-seller="5dee44cf1960a900153d7600"
-                    data-checkout="silver-cufflinks-with-coat-of-arms"
+                    href="https://checkoutpage.co/c/5dee44cf1960a900153d7600/silver-cufflinks-with-coat-of-arms"
                     onmouseover="hover('cufflinks')"
                     onmouseout="unhover('cufflinks')"
                     class="add_to_cart_button cp-button"
@@ -888,10 +825,6 @@
                 <div class="ld-sp-info">
                   <h3>
                     <a
-                      target="_blank"
-                      data-seller="5dee44cf1960a900153d7600"
-                      data-checkout="silver-cufflinks-with-coat-of-arms"
-                      class="cp-button"
                       style="cursor: pointer"
                       onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘silver-cufflinks-with-coat-of-arms’, ‘4300’);"
                       >Silver cufflinks with coat of arms
@@ -899,7 +832,7 @@
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 4300
+                      <span class="ld-sp-currency">$</span> 599
                     </span>
                   </p>
                 </div>
@@ -916,30 +849,17 @@
                     />
                   </figure>
                   <a
-                    target="_blank"
-                    data-seller="5dee44cf1960a900153d7600"
-                    data-checkout="silver-and-platinum-book-necklace"
-                    class="add_to_cart_button cp-button"
+                    class="add_to_cart_button"
                     style="cursor: pointer"
                     onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘silver-and-platinum-book-necklace’, ‘21000’);"
                   >
-                    <span
-                      target="_blank"
-                      data-seller="5dee44cf1960a900153d7600"
-                      data-checkout="silver-and-platinum-book-necklace"
-                      class="cp-button"
-                      >Customize</span
-                    >
+                    <span target="_blank">Customize</span>
                   </a>
                 </div>
                 <!-- /.ld-sp -->
                 <div class="ld-sp-info">
                   <h3>
                     <a
-                      target="_blank"
-                      data-seller="5dee44cf1960a900153d7600"
-                      data-checkout="silver-and-platinum-book-necklace"
-                      class="cp-button"
                       style="cursor: pointer"
                       onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘silver-and-platinum-book-necklace’, ‘21000’);"
                       >Platinum book necklace with hidden compartment
@@ -947,7 +867,7 @@
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 21 000
+                      <span class="ld-sp-currency">$</span> 2199
                     </span>
                   </p>
                 </div>
@@ -967,32 +887,19 @@
                     />
                   </figure>
                   <a
-                    target="_blank"
-                    data-seller="5dee44cf1960a900153d7600"
-                    data-checkout="round-thin-band-signet-ring-9k-yellow-gold"
-                    class="add_to_cart_button cp-button"
+                    class="add_to_cart_button"
                     onmouseover="hover('round-signet')"
                     onmouseout="unhover('round-signet')"
                     style="cursor: pointer"
                     onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘round-thin-band-signet-ring-9k-yellow-gold’, ‘8450’);"
                   >
-                    <span
-                      target="_blank"
-                      data-seller="5dee44cf1960a900153d7600"
-                      data-checkout="round-thin-band-signet-ring-9k-yellow-gold"
-                      class="cp-button"
-                      >Customize</span
-                    >
+                    <span target="_blank">Customize</span>
                   </a>
                 </div>
                 <!-- /.ld-sp -->
                 <div class="ld-sp-info">
                   <h3>
                     <a
-                      target="_blank"
-                      data-seller="5dee44cf1960a900153d7600"
-                      data-checkout="round-thin-band-signet-ring-9k-yellow-gold"
-                      class="cp-button"
                       style="cursor: pointer"
                       onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘round-thin-band-signet-ring-9k-yellow-gold’, ‘8450’);"
                       >Gold signet ring with custom face and band
@@ -1000,7 +907,7 @@
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 8450
+                      <span class="ld-sp-currency">$</span> 699
                     </span>
                   </p>
                 </div>
@@ -1017,30 +924,17 @@
                     />
                   </figure>
                   <a
-                    target="_blank"
-                    data-seller="5dee44cf1960a900153d7600"
-                    data-checkout="platinum-wedding-band"
-                    class="add_to_cart_button cp-button"
+                    class="add_to_cart_button"
                     style="cursor: pointer"
                     onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘platinum-wedding-band’, ‘10550’);"
                   >
-                    <span
-                      target="_blank"
-                      data-seller="5dee44cf1960a900153d7600"
-                      data-checkout="platinum-wedding-band"
-                      class="cp-button"
-                      >Customize</span
-                    >
+                    <span target="_blank">Customize</span>
                   </a>
                 </div>
                 <!-- /.ld-sp -->
                 <div class="ld-sp-info">
                   <h3>
                     <a
-                      target="_blank"
-                      data-seller="5dee44cf1960a900153d7600"
-                      data-checkout="platinum-wedding-band"
-                      class="cp-button"
                       style="cursor: pointer"
                       onClick="ga(‘send’, ‘event’, ‘initiate-checkout’, ‘click’, ‘platinum-wedding-band’, ‘10550’);"
                       >Platinum wedding band
@@ -1048,7 +942,7 @@
                   </h3>
                   <p class="ld-sp-price">
                     <span class="ld-sp-price-amount">
-                      <span class="ld-sp-currency">SEK</span> 10 550
+                      <span class="ld-sp-currency">$</span> 1299
                     </span>
                   </p>
                 </div>
@@ -1059,12 +953,12 @@
             <div class="row">
               <div
                 class="col-md-12"
-                style="display:flex; justify-content:center"
+                style="display: flex; justify-content: center"
               >
                 <button
                   onclick="showMore()"
                   id="showMoreButton"
-                  class="btn btn-default text-uppercase btn-xlg circle btn-bordered border-thin font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2"
+                  class="btn text-uppercase btn-xlg circle font-size-12 lh-15 font-weight-bold ltr-sp-05 mb-2"
                 >
                   <span>
                     <span class="btn-txt">Show more jewelry</span>
@@ -1088,8 +982,9 @@
                       <img
                         src="./assets/img/howitworks/design.svg"
                         class="liquid-image-icon"
+                        class="lazyload"
                         alt="Icon"
-                        style="width:90px"
+                        style="width: 90px"
                       />
                     </span>
                   </div>
@@ -1114,8 +1009,9 @@
                       <img
                         src="./assets/img/howitworks/3DPrint.svg"
                         class="liquid-image-icon"
+                        class="lazyload"
                         alt="Icon"
-                        style="width:90px"
+                        style="width: 90px"
                       />
                     </span>
                   </div>
@@ -1140,8 +1036,9 @@
                       <img
                         src="./assets/img/howitworks/ring.svg"
                         class="liquid-image-icon"
+                        class="lazyload"
                         alt="Icon"
-                        style="width:90px"
+                        style="width: 90px"
                       />
                     </span>
                   </div>
@@ -1181,7 +1078,8 @@
                         <img
                           data-src="./assets/img/craftmanship/polishing.jpg"
                           alt="Polishing"
-                          class="lazyload"
+                          src="./assets/img/craftmanship/polishing.jpg"
+                          lazyloaded
                         />
                       </figure>
                     </div>
@@ -1271,17 +1169,18 @@
                       >
                         <div class="col-md-4 col-sm-3 col-xs-4">
                           <div
-                            class="testimonial testimonial-lg testimonial-details-sm text-right testimonials-details-only "
+                            class="testimonial testimonial-lg testimonial-details-sm text-right testimonials-details-only"
                           >
                             <div class="testimonial-details">
                               <figure class="avatar">
                                 <img
                                   src="./assets/img/testimonials/k_prof.png"
-                                  alt="Ivana Jones"
+                                  alt="Katarina"
+                                  class="lazyload"
                                 />
                               </figure>
                               <div class="testimonial-info">
-                                <h5 class="">Katarina Fransson</h5>
+                                <h5 class="">Katarina</h5>
                                 <h6></h6>
                               </div>
                             </div>
@@ -1291,17 +1190,18 @@
 
                         <div class="col-md-4 col-sm-3 col-xs-4">
                           <div
-                            class="testimonial testimonial-lg testimonial-details-sm text-right testimonials-details-only "
+                            class="testimonial testimonial-lg testimonial-details-sm text-right testimonials-details-only"
                           >
                             <div class="testimonial-details">
                               <figure class="avatar">
                                 <img
                                   src="./assets/img/testimonials/a_prof.png"
-                                  alt="Ivana Jones"
+                                  alt="Astrid"
+                                  class="lazyload"
                                 />
                               </figure>
                               <div class="testimonial-info">
-                                <h5 class="">Astrid Eriksen</h5>
+                                <h5 class="">Astrid</h5>
                                 <h6></h6>
                               </div>
                               <!-- /.testimonial-info -->
@@ -1314,17 +1214,18 @@
 
                         <div class="col-md-4 col-sm-3 col-xs-4">
                           <div
-                            class="testimonial testimonial-lg testimonial-details-sm text-right testimonials-details-only "
+                            class="testimonial testimonial-lg testimonial-details-sm text-right testimonials-details-only"
                           >
                             <div class="testimonial-details">
                               <figure class="avatar">
                                 <img
                                   src="./assets/img/testimonials/j_prof.png"
-                                  alt="Ivana Jones"
+                                  alt="Jaakko"
+                                  class="lazyload"
                                 />
                               </figure>
                               <div class="testimonial-info">
-                                <h5 class="">Jaakko Svinhufvud</h5>
+                                <h5 class="">Jaakko</h5>
                                 <h6></h6>
                               </div>
                               <!-- /.testimonial-info -->
@@ -1502,7 +1403,9 @@
                         </div>
                         <!-- /.iconbox-icon-wrap -->
                         <h3 class="font-weight-normal font-size-16">
-                          Lifetime warranty
+                          <a href="https://tidanapp.com/shop/warranty/"
+                            >Lifetime warranty</a
+                          >
                         </h3>
                       </div>
                       <!-- /.iconbox -->
@@ -1517,7 +1420,9 @@
                         </div>
                         <!-- /.iconbox-icon-wrap -->
                         <h3 class="font-weight-normal font-size-16">
-                          Accent stone loss warranty
+                          <a href="https://tidanapp.com/shop/warranty/"
+                            >Accent stone loss warranty</a
+                          >
                         </h3>
                       </div>
                       <!-- /.iconbox -->
@@ -1538,7 +1443,7 @@
         <section
           class="vc_row pt-95 pb-80 mt-80 bg-cover"
           id="buy"
-          style="background-image: url(./assets/img/getstarted/bottom_ring.jpg);"
+          style="background-image: url(./assets/img/getstarted/bottom_ring.jpg)"
           data-parallax="true"
           data-parallax-options='{"parallaxBG": true}'
         >
@@ -1567,10 +1472,8 @@
 
               <div class="lqd-column col-md-3 col-md-offset-1 text-center">
                 <a
-                  href="https://benjaminwaye.typeform.com/to/jWV8qz"
-                  data-mode="popup"
-                  target="_blank"
-                  class="typeform-share button btn btn-solid btn-sm semi-round px-3 btn-block bg-white border-color-white bg-hover-dark text-dark text-hover-white lh-2"
+                  href="https://app.tidanapp.com"
+                  class="button btn btn-solid btn-sm semi-round px-3 btn-block bg-white border-color-white bg-hover-dark text-dark text-hover-white lh-2"
                   onClick="ga(‘send’, ‘event’, ‘cta’, ‘click’, ‘bottom-button’);"
                 >
                   <span>
@@ -1611,7 +1514,7 @@
                 <figure>
                   <img
                     src="./assets/img/logo/tidan-light-bottom.svg"
-                    alt="Polarforged"
+                    alt="Tidan"
                   />
                 </figure>
               </div>
@@ -1620,9 +1523,21 @@
               <div class="lqd-column col-md-6">
                 <div class="one-bullet-list">
                   <ul class="reset-ul inline-nav">
-                    <li>Life warranty</li>
+                    <li>
+                      <a
+                        href="https://tidanapp.com/shop/warranty/"
+                        target="_blank"
+                        >Life warranty</a
+                      >
+                    </li>
                     <li>Swedish craftmanship</li>
-                    <li>Sustainable production</li>
+                    <li>
+                      <a
+                        href="https://tidanapp.com/shop/honest-pricing/"
+                        target="_blank"
+                        >Honest pricing</a
+                      >
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -1639,23 +1554,19 @@
               <div class="lqd-column col-md-4 col-sm-12">
                 <p>
                   <a href="mailto:hello@tidanapp.com">hello@tidanapp.com</a>
-                  <br />
-                  <br />
-                  Magnus Ladulåsgatan 3, <br />
-                  Stockholm, Sweden
-                  <br />
-                  <br />
-                  +46 827 84 88
                 </p>
               </div>
               <!-- /.col-md-4 -->
 
               <div class="lqd-column col-md-2 col-sm-6">
                 <ul class="lqd-custom-menu reset-ul font-size-16 lh-2">
-                  <li class="mb-1"><a href="pages/terms">Terms</a></li>
-                  <li class="mb-1"><a href="#" target="_blank"></a></li>
-                  <li class="mb-1"><a href="#" target="_blank"></a></li>
-                  <li class="mb-1"><a href="#" target="_blank"></a></li>
+                  <li class="mb-1">
+                    <a
+                      href="https://tidanapp.com/shop/terms-and-conditions/"
+                      target="_blank"
+                      >Terms and conditions</a
+                    >
+                  </li>
                 </ul>
               </div>
               <!-- /.lqd-column col-md-2 col-sm-6 -->
@@ -1738,31 +1649,11 @@
     <script defer src="./assets/js/theme.min.js"></script>
     <script defer src="./assets/js/liquidAjaxMailchimp.min.js"></script>
     <script>
-      (function() {
-        var qs,
-          js,
-          q,
-          s,
-          d = document,
-          gi = d.getElementById,
-          ce = d.createElement,
-          gt = d.getElementsByTagName,
-          id = "typef_orm_share",
-          b = "https://embed.typeform.com/";
-        if (!gi.call(d, id)) {
-          js = ce.call(d, "script");
-          js.id = id;
-          js.src = b + "embed.js";
-          q = gt.call(d, "script")[0];
-          q.parentNode.insertBefore(js, q);
-        }
-      })();
-    </script>
-    <script>
       function showMore() {
         document.getElementById("hiddenRow").classList.remove("hidden");
         document.getElementById("showMoreButton").classList.add("hidden");
       }
+
       function hover(id) {
         let el = document.getElementById(id);
         if (id.substring(0, 7) == "animate") {
@@ -1775,6 +1666,7 @@
         let newSrc = src.substring(0, src.length - 4) + "_2.jpg";
         el.setAttribute("src", newSrc);
       }
+
       function unhover(id) {
         let el = document.getElementById(id);
         let src = el.getAttribute("src");
@@ -1783,13 +1675,13 @@
       }
     </script>
     <!-- Chatra -->
-    <script>
-      (function(d, w, c) {
+    <script defer>
+      (function (d, w, c) {
         w.ChatraID = "DMDNz4MY9MGnGM7fQ";
         var s = d.createElement("script");
         w[c] =
           w[c] ||
-          function() {
+          function () {
             (w[c].q = w[c].q || []).push(arguments);
           };
         s.async = true;
@@ -1800,8 +1692,8 @@
       window.ChatraSetup = {
         colors: {
           buttonText: "#fff" /* chat button text color */,
-          buttonBg: "#e0957a" /* chat button background color */
-        }
+          buttonBg: "#e0957a" /* chat button background color */,
+        },
       };
     </script>
     <!-- /Chatra  -->
@@ -1810,5 +1702,7 @@
   <link
     rel="stylesheet"
     href="assets/vendors/fontello-e2e922fe/css/fontawesome.css"
+    media="print"
+    onload="this.media='all'"
   />
 </html>
